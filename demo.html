@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="Copyright" content="酷站代码 http://www.5icool.org/" />
+<title>模仿flash翻转效果的jquery导航菜单代码_酷站代码 www.5icool.org</title>
+	   <link rel="stylesheet" type="text/css" href="css/flipmenu.css"/>
+      <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+       <script type="text/javascript" src="js/flipmenu-min.js"></script>
+	    <script type="text/javascript">
+            $(document).ready(function(){
+                var menu = new Flipmenu("flip_menu");
+            });
+	    </script>
+	    
+	    <style type="text/css">
+	       h1 {
+               font-family: arial;
+               font-size: 14pt;
+               color: #318DF2;
+               margin-top: 35px;
+	       }
+	       
+	       #wrap {
+               margin : 0px auto;
+	           width : 321px;
+	       }
+	    #flip_menu ul li {
+	height: 40px;
+	width: 320px;
+	margin-bottom: 1px;
+	list-style-type: none;
+	background-image: url(images/menu_bg.png);
+}
+#flip_menu ul .activeli{
+	background-image: url(images/menu_bg_active.png);
+	background-repeat: repeat;
+}
+/*#flip_menu ul li:hover{
+	background-image: url(images/menu_bg_hover.png);
+	background-repeat: repeat;
+}*/
+        </style>
+	    
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div id="flip_menu">
+            <ul>
+              <li>  <a href="http://www.5icool.org/wangyetexiao/menu/">征集启事  Entry Rules  </a></li>
+               <li class="activeli"> <a class="active" href="http://www.5icool.org/">新闻通讯  News and Events</a></li>
+                <li><a href="http://www.5icool.org/">作品展示  Show</a></li>
+               <li> <a href="http://www.5icool.org/wangyetexiao/menu/">搜索本站  Search</a></li>
+</ul>
+            </div>
+        </div>
+
+
+</body>
+</html>
